@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <managed-bean>
+        <managed-bean-name><strong>selecCursosBean</strong> </managed-bean-name>
+        <managed-bean-class>
+            <strong>co.beans.SelecCursosBean</strong>
+        </managed-bean-class>
+        <managed-bean-scope>
+            <Strong>Request</Strong>
+        </managed-bean-scope>
+        <managed-property>
+            <property-name>email</property-name>
+            <value>Ingresa tu correo electrónico</value>
+        </managed-property>
+    </managed-bean>
+</faces-config>
