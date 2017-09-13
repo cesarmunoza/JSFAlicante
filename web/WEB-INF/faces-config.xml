@@ -6,14 +6,23 @@
     <managed-bean>
         <managed-bean-name><strong>selecCursosBean</strong> </managed-bean-name>
         <managed-bean-class>
-            <strong>co.beans.SelecCursosBean</strong>
+            <strong>beans.SelecCursosBean</strong>
         </managed-bean-class>
         <managed-bean-scope>
-            <Strong>Request</Strong>
+            <Strong>session</Strong>
         </managed-bean-scope>
         <managed-property>
             <property-name>email</property-name>
             <value>Ingresa tu correo electrónico</value>
+        </managed-property>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>selecCursosController</managed-bean-name>
+        <managed-bean-class>controller.SelecCursosController</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+        <managed-property>
+            <property-name>datosCursos</property-name>
+            <value>#{selecCursosBean}</value>
         </managed-property>
     </managed-bean>
 </faces-config>
